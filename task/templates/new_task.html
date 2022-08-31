@@ -1,0 +1,12 @@
+{% extends "task/templates/index.html" %}
+{% load static %}           
+{% block content %}              
+
+
+<form  method="POST" class="card card-body" bg-dark>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" name="submit">
+</form>
+
+{% endblock %}
